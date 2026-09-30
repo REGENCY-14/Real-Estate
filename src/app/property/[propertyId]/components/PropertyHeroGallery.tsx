@@ -33,17 +33,17 @@ function CameraIcon() {
 
 export default function PropertyHeroGallery({ property }: { property: Property }) {
   return (
-    <div className="grid h-[600px] w-full grid-cols-3 gap-3 overflow-hidden rounded-[24px]">
-      <div className="relative col-span-2 h-full overflow-hidden rounded-[24px]">
-        <Image src={property.heroImage} alt={property.name} fill priority className="object-cover" sizes="66vw" />
+    <div className="flex w-full flex-col gap-3 overflow-hidden rounded-[24px] lg:grid lg:h-[600px] lg:grid-cols-3">
+      <div className="relative h-[260px] w-full overflow-hidden rounded-[24px] sm:h-[360px] lg:col-span-2 lg:h-full lg:w-auto">
+        <Image src={property.heroImage} alt={property.name} fill priority className="object-cover" sizes="(max-width: 1023px) 100vw, 66vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-        <div className="absolute bottom-6 left-6 max-w-[520px] rounded-2xl bg-[rgba(0,0,0,0.4)] p-6 backdrop-blur-[6px]">
+        <div className="absolute inset-x-4 bottom-4 max-w-full rounded-2xl bg-[rgba(0,0,0,0.4)] p-4 backdrop-blur-[6px] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:max-w-[520px] sm:p-6">
           <span className="inline-block rounded-full bg-[#fed65b] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.7px] text-[#745c00]">
             {property.tag}
           </span>
           <h1
-            className={`${montserrat.className} mt-3 text-[32px] font-semibold leading-tight text-white md:text-[40px]`}
+            className={`${montserrat.className} mt-3 text-[22px] font-semibold leading-tight text-white sm:text-[28px] md:text-[32px] lg:text-[40px]`}
           >
             {property.name}
           </h1>
@@ -54,20 +54,21 @@ export default function PropertyHeroGallery({ property }: { property: Property }
         </div>
       </div>
 
-      <div className="flex h-full flex-col gap-3">
-        <div className="relative h-full flex-1 overflow-hidden rounded-[24px]">
-          <Image src={property.galleryImages[0]} alt={`${property.name} bedroom`} fill className="object-cover" sizes="33vw" />
+      <div className="grid grid-cols-2 gap-3 lg:flex lg:h-full lg:flex-col">
+        <div className="relative h-[140px] overflow-hidden rounded-[24px] sm:h-[200px] lg:h-full lg:flex-1">
+          <Image src={property.galleryImages[0]} alt={`${property.name} bedroom`} fill className="object-cover" sizes="(max-width: 1023px) 50vw, 33vw" />
         </div>
 
-        <div className="group relative h-full flex-1 overflow-hidden rounded-[24px]">
-          <Image src={property.galleryImages[1]} alt={`${property.name} bathroom`} fill className="object-cover" sizes="33vw" />
+        <div className="group relative h-[140px] overflow-hidden rounded-[24px] sm:h-[200px] lg:h-full lg:flex-1">
+          <Image src={property.galleryImages[1]} alt={`${property.name} bathroom`} fill className="object-cover" sizes="(max-width: 1023px) 50vw, 33vw" />
           <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <button
               type="button"
-              className="flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#00261b] shadow-lg"
+              className="flex items-center gap-1.5 rounded-full bg-white px-3 py-2 text-xs font-semibold text-[#00261b] shadow-lg sm:gap-2 sm:px-5 sm:py-3 sm:text-sm"
             >
               <CameraIcon />
-              View 42 Photos
+              <span className="hidden sm:inline">View 42 Photos</span>
+              <span className="sm:hidden">42</span>
             </button>
           </div>
         </div>
