@@ -258,7 +258,7 @@ export default function VerifyIdentity() {
                   onKeyDown={(e) => handleKeyDown(index, e)}
                   disabled={loading}
                   aria-label={`Digit ${index + 1}`}
-                  className="aspect-square w-full flex-1 rounded-lg border-2 border-[#cbd5e0] text-center text-xl font-semibold text-[#0f1621] transition-colors focus:border-[#be4d00] focus:outline-none disabled:opacity-60"
+                  className="aspect-square w-full flex-1 rounded-xl border-2 border-[#cbd5e0] text-center text-xl font-semibold text-[#0f1621] transition-colors focus:border-[#be4d00] focus:outline-none disabled:opacity-60"
                 />
               ))}
             </div>

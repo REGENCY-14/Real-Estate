@@ -159,7 +159,7 @@ function FormField({
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         disabled={disabled}
-        className={`w-full rounded-lg border bg-white text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${FLUID.input} ${
+        className={`w-full rounded-xl border bg-white text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${FLUID.input} ${
           error ? "border-red-500" : "border-[#c0c8c3]"
         }`}
       />
@@ -206,7 +206,7 @@ function PasswordField({
           onChange={(e) => onChange(e.target.value)}
           placeholder="••••••••"
           disabled={disabled}
-          className={`w-full rounded-lg border bg-white text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${FLUID.input} ${
+          className={`w-full rounded-xl border bg-white text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${FLUID.input} ${
             error ? "border-red-500" : "border-[#c0c8c3]"
           }`}
         />

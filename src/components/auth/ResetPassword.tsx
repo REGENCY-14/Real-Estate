@@ -250,7 +250,7 @@ export default function ResetPassword() {
                   }}
                   placeholder="name@firm.com"
                   disabled={sendLoading}
-                  className={`w-full rounded-lg border bg-white px-[17px] py-4 text-sm text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
+                  className={`w-full rounded-xl border bg-white px-[17px] py-4 text-sm text-[#00261b] placeholder:text-[#717974] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
                     emailError ? "border-red-500" : "border-[#c0c8c3]"
                   }`}
                 />
@@ -300,7 +300,7 @@ export default function ResetPassword() {
                     onKeyDown={(e) => handleKeyDown(index, e)}
                     disabled={verifyLoading}
                     aria-label={`Digit ${index + 1}`}
-                    className="aspect-square w-full flex-1 rounded-lg border-2 border-[#cbd5e0] text-center text-xl font-semibold text-[#0f1621] transition-colors focus:border-[#be4d00] focus:outline-none disabled:opacity-60"
+                    className="aspect-square w-full flex-1 rounded-xl border-2 border-[#cbd5e0] text-center text-xl font-semibold text-[#0f1621] transition-colors focus:border-[#be4d00] focus:outline-none disabled:opacity-60"
                   />
                 ))}
               </div>
@@ -352,7 +352,7 @@ export default function ResetPassword() {
                     }}
                     placeholder="Enter your password"
                     disabled={updateLoading}
-                    className={`h-12 w-full rounded-lg border bg-white px-3 py-1.5 text-sm text-[#111826] placeholder:text-[#94a3b7] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
+                    className={`h-12 w-full rounded-xl border bg-white px-3 py-1.5 text-sm text-[#111826] placeholder:text-[#94a3b7] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
                       passwordError ? "border-red-500" : "border-[#cbd5e0]"
                     }`}
                   />
@@ -384,7 +384,7 @@ export default function ResetPassword() {
                     }}
                     placeholder="Enter your password"
                     disabled={updateLoading}
-                    className={`h-12 w-full rounded-lg border bg-white px-3 py-1.5 text-sm text-[#111826] placeholder:text-[#94a3b7] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
+                    className={`h-12 w-full rounded-xl border bg-white px-3 py-1.5 text-sm text-[#111826] placeholder:text-[#94a3b7] focus:outline-none focus:ring-1 focus:ring-[#be4d00] ${
                       passwordError ? "border-red-500" : "border-[#cbd5e0]"
                     }`}
                   />
