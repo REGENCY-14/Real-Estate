@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -47,14 +46,12 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
         <div className="flex w-full items-center justify-between gap-8">
           <div className="flex items-center gap-12">
             <Link href="/home" className="shrink-0">
-              <Image
-                src="/auth-logo-mark.png"
-                alt="Festari Estates"
-                width={44}
-                height={44}
-                className="h-11 w-auto [filter:brightness(0)_invert(1)]"
-                priority
-              />
+              <div
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-lg"
+                aria-label="Logo placeholder"
+              >
+                YC
+              </div>
             </Link>
             <div className="hidden items-center gap-8 lg:flex">
               {NAV_LINKS.map((link) => {
@@ -81,9 +78,9 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
           <div className="flex items-center gap-6">
             <Link
               href="/signup"
-              className="whitespace-nowrap rounded-xl bg-[#be4d00] px-4 py-3.5 text-[18px] font-normal text-white transition-colors hover:bg-[#a54300]"
+              className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-3.5 text-[18px] font-normal text-white transition-colors hover:bg-[#a54300]"
             >
-              Become a host
+              Sign Up
             </Link>
             <Link
               href="/login"

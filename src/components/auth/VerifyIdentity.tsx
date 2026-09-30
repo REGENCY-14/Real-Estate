@@ -146,9 +146,9 @@ export default function VerifyIdentity() {
         };
 
   return (
-    <div className="grid h-screen w-full grid-cols-2 overflow-hidden bg-[#fcf9f8]">
+    <div className="grid h-screen w-full grid-cols-1 overflow-hidden bg-[#fcf9f8] lg:grid-cols-2">
       {/* Left: Immersive imagery */}
-      <div className="relative flex items-center justify-center overflow-hidden p-[clamp(1.5rem,4vh,4rem)]">
+      <div className="relative hidden items-center justify-center overflow-hidden p-[clamp(1.5rem,4vh,4rem)] lg:flex">
         <div className="relative h-full w-full overflow-hidden rounded-2xl">
           <motion.div
             initial={shouldReduceMotion ? { scale: 1 } : { scale: 1.08 }}
@@ -171,16 +171,14 @@ export default function VerifyIdentity() {
             {...fadeUp(0)}
             className="absolute left-[clamp(1.5rem,3vw,3.3rem)] top-[clamp(1.5rem,3vh,3rem)] flex items-center gap-2"
           >
-            <div className="relative h-[clamp(2.25rem,5vh,3.3rem)] w-[clamp(1.75rem,3.9vh,2.56rem)] shrink-0">
-              <Image
-                src="/auth-logo-mark.png"
-                alt=""
-                fill
-                className="object-contain object-bottom [filter:brightness(0)_invert(1)]"
-              />
+            <div
+              className="relative flex h-[clamp(2.25rem,5vh,3.3rem)] w-[clamp(1.75rem,3.9vh,2.56rem)] shrink-0 items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-sm"
+              aria-label="Logo placeholder"
+            >
+              YC
             </div>
             <p className="text-[clamp(1rem,1.6vh+0.3vw,1.25rem)] font-bold leading-tight tracking-[-0.5px] text-white">
-              Festari Estates
+              Your Company
             </p>
           </motion.div>
 
@@ -194,13 +192,13 @@ export default function VerifyIdentity() {
                 Uncompromising Security for Your Legacy
               </h2>
               <p className="text-[clamp(0.875rem,1vh+0.3vw,1.125rem)] italic leading-relaxed text-white/90">
-                &quot;At FEO Estates, we believe that true luxury is peace of mind. Your assets and identity are
+                &quot;At Your Company, we believe that true luxury is peace of mind. Your assets and identity are
                 guarded by the same precision that defines our architecture.&quot;
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-px w-12 bg-[#ffe088]" />
                 <p className="text-[clamp(0.6875rem,0.8vh,0.875rem)] font-semibold uppercase tracking-[1.4px] text-[#ffe088]">
-                  Festari Security Protocol
+                  Security Protocol
                 </p>
               </div>
             </div>
@@ -217,7 +215,7 @@ export default function VerifyIdentity() {
           className="w-full max-w-[448px] rounded-[22px] bg-white px-[clamp(1.5rem,3vw,2rem)] py-[clamp(2rem,6vh,3.75rem)] shadow-sm"
         >
           <div className="flex flex-col gap-3 py-2">
-            <h1 className="text-2xl font-bold tracking-tight text-[#0f1621]">Festari Estates</h1>
+            <h1 className="text-2xl font-bold tracking-tight text-[#0f1621]">Your Company</h1>
             <div className="h-1 w-12 bg-[#be4d00]" />
           </div>
 

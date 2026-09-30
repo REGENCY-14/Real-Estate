@@ -89,7 +89,7 @@ export default function HotelGuestFavorite({ hotel }: { hotel: Hotel }) {
         transition={{ duration: 0.5, delay: 0.38, ease: EASE }}
         className="max-w-md text-base text-[#717974]"
       >
-        One of the most loved stays on Festari Estates, based on ratings, reviews, and reliability.
+        One of the most loved stays on Your Company, based on ratings, reviews, and reliability.
       </motion.p>
     </div>
   );

@@ -64,7 +64,7 @@ export default function LandingFooter() {
       <div className="mx-auto max-w-[1280px] px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-6">
-            <h2 className={`${montserrat.className} text-2xl font-bold text-white`}>FESTARI ESTATES</h2>
+            <h2 className={`${montserrat.className} text-2xl font-bold text-white`}>Your Company</h2>
             <p className="text-base text-white/80">
               Defining the future of luxury living through a lens of architectural precision and digital innovation.
             </p>
@@ -121,7 +121,7 @@ export default function LandingFooter() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-3 text-base text-white/80">
                 <MailIcon />
-                contact@feoestates.online
+                contact@yourcompany.online
               </li>
               <li className="flex items-center gap-3 text-base text-white/80">
                 <PhoneIcon />
@@ -136,7 +136,7 @@ export default function LandingFooter() {
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8 text-center text-base tracking-[0.7px] text-white/40">
-          © 2026 Festari Estates Online. All rights reserved.
+          © 2026 Your Company Online. All rights reserved.
         </div>
       </div>
     </footer>

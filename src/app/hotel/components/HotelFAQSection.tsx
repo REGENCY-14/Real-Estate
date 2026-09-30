@@ -8,14 +8,14 @@ import { StaggerContainer, StaggerItem } from "@/components/motion/Stagger";
 
 const FAQS = [
   {
-    question: "What makes Festari Hotels different?",
+    question: "What makes our hotels different?",
     answer:
       "Every stay in our portfolio is personally inspected by our travel specialists. We pair verified guest reviews with a concierge-level booking experience, so every hotel you see here is one we'd stay in ourselves.",
   },
   {
     question: "How does booking work?",
     answer:
-      "Select your dates and guest count, then reserve directly through the listing: no fees, no middlemen. You'll receive confirmation and check-in details within minutes.",
+      "Select your dates and guest count, then check availability on the listing. Direct booking is coming soon, and you'll receive confirmation and check-in details within minutes once it's live.",
   },
   {
     question: "What's your cancellation policy?",
@@ -35,7 +35,7 @@ const FAQS = [
   {
     question: "How do I list my own hotel?",
     answer:
-      "Reach out through \"Become a host.\" Our team will assess your property, arrange professional photography, and position it within our curated portfolio.",
+      "Sign up through \"Sign Up\" in the navigation. Our team will assess your property, arrange professional photography, and position it within our curated portfolio.",
   },
 ];
 

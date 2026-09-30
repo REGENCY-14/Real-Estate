@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ComingSoonPage from "@/components/ComingSoonPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Festari Estate",
-  description: "Read Festari Estates' privacy policy.",
+  title: "Privacy Policy | Your Company",
+  description: "Read Your Company's privacy policy.",
 };
 
 export default function PrivacyPage() {

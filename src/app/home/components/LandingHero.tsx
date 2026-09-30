@@ -59,19 +59,19 @@ export default function LandingHero() {
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-8 px-5 py-16 text-center">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-6 px-5 py-16 text-center sm:gap-8">
         <motion.h1
           {...fadeUp(0)}
-          className={`${montserrat.className} max-w-4xl text-[42px] font-bold leading-[1.1] tracking-[-1.28px] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] sm:text-[56px] md:text-[64px] md:leading-[70px]`}
+          className={`${montserrat.className} max-w-4xl text-[28px] font-bold leading-[1.15] tracking-[-0.6px] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] sm:text-[42px] sm:tracking-[-1.28px] md:text-[56px] lg:text-[64px] lg:leading-[70px]`}
         >
           Discover Your Legacy Estate
         </motion.h1>
 
-        <motion.p {...fadeUp(0.1)} className="max-w-[672px] text-lg text-white/90">
+        <motion.p {...fadeUp(0.1)} className="max-w-[672px] text-sm text-white/90 sm:text-base md:text-lg">
           {"Connecting discerning individuals with the world's most exclusive properties and bespoke hospitality services."}
         </motion.p>
 
-        <motion.div {...fadeUp(0.2)} className="w-full max-w-[1050px]">
+        <motion.div {...fadeUp(0.2)} className="mt-6 w-full max-w-[1050px] sm:mt-0">
           <div className="overflow-hidden rounded-[32px] border border-white/20 bg-[rgba(50,50,50,0.7)] px-2.5 py-8 md:py-10">
             <p className="mb-8 text-center text-xs font-semibold uppercase tracking-[1.4px] text-white/50">
               Trusted by Industry Leaders

@@ -129,16 +129,14 @@ export default function ChangeContactMethod() {
           transition={{ duration: 0.5, ease: EASE }}
           className="absolute left-[clamp(1.5rem,3vw,3rem)] top-[clamp(1.25rem,3vh,2.1rem)] flex items-center gap-2"
         >
-          <div className="relative h-[clamp(2.25rem,5vh,3.3rem)] w-[clamp(1.75rem,3.9vh,2.56rem)] shrink-0">
-            <Image
-              src="/auth-logo-mark.png"
-              alt=""
-              fill
-              className="object-contain object-bottom [filter:brightness(0)_invert(1)]"
-            />
+          <div
+            className="relative flex h-[clamp(2.25rem,5vh,3.3rem)] w-[clamp(1.75rem,3.9vh,2.56rem)] shrink-0 items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-sm"
+            aria-label="Logo placeholder"
+          >
+            YC
           </div>
           <p className="text-[clamp(1rem,1.6vh+0.3vw,1.25rem)] font-bold leading-tight tracking-[-0.5px] text-white">
-            Festari Estates
+            Your Company
           </p>
         </motion.div>
 
@@ -164,7 +162,7 @@ export default function ChangeContactMethod() {
                 </h1>
 
                 <p className="text-[clamp(0.875rem,1vh+0.2vw,1.125rem)] leading-relaxed text-white">
-                  To maintain the highest security standards for your Festari Estates account, please choose which
+                  To maintain the highest security standards for your account, please choose which
                   verified contact method you wish to receive your OTP on.
                 </p>
 

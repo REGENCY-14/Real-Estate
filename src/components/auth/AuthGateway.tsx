@@ -371,7 +371,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
       key="hero"
       layout={!shouldReduceMotion}
       transition={{ layout: { duration: 0.6, ease: EASE } }}
-      className="relative flex h-full items-center justify-center p-3"
+      className="relative hidden h-full items-center justify-center p-3 lg:flex"
     >
       <div className="relative h-full w-full overflow-hidden rounded-3xl">
         <div className="absolute inset-0">
@@ -395,16 +395,14 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
 
         <div className={`relative flex h-full w-full flex-col items-start justify-between ${FLUID.heroPad}`}>
           <motion.div {...fadeUp(0)} className="flex w-full items-center gap-2">
-            <div className={`relative shrink-0 ${FLUID.logoBox}`}>
-              <Image
-                src="/auth-logo-mark.png"
-                alt=""
-                fill
-                className="object-contain object-bottom [filter:brightness(0)_invert(1)]"
-              />
+            <div
+              className={`relative shrink-0 flex items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-lg ${FLUID.logoBox}`}
+              aria-label="Logo placeholder"
+            >
+              YC
             </div>
             <p className={`${FLUID.brandText} font-bold leading-tight tracking-[-0.5px] text-white`}>
-              Festari Estates
+              Your Company
             </p>
           </motion.div>
 
@@ -457,7 +455,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
           </AnimatePresence>
 
           <motion.div {...fadeUp(0.35)} className="flex w-full items-center justify-between">
-            <p className={`${FLUID.footerText} leading-tight text-white/50`}>© 2026 Festari Estates Group</p>
+            <p className={`${FLUID.footerText} leading-tight text-white/50`}>© 2026 Your Company Group</p>
             <div className="flex items-center gap-4">
               <Link href="/privacy" className={`${FLUID.footerText} leading-tight text-white/50 transition-colors hover:text-white`}>
                 Privacy Policy
@@ -698,7 +696,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                         setLastName(v);
                         setErrors({});
                       }}
-                      placeholder="Festari"
+                      placeholder="Doe"
                       disabled={loading}
                       autoComplete="family-name"
                       error={errors.lastName}
@@ -894,7 +892,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
   );
 
   return (
-    <div className="grid h-screen w-full grid-cols-2 overflow-hidden bg-[#fcf9f8]">
+    <div className="grid h-screen w-full grid-cols-1 overflow-hidden bg-[#fcf9f8] lg:grid-cols-2">
       {isSignIn ? (
         <>
           {heroPanel}

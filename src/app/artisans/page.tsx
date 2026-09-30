@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ComingSoonPage from "@/components/ComingSoonPage";
 
 export const metadata: Metadata = {
-  title: "Artisan Directory | Festari Estate",
-  description: "Browse the Festari Estates artisan directory by craft and region.",
+  title: "Artisan Directory | Your Company",
+  description: "Browse the Your Company artisan directory by craft and region.",
 };
 
 export default function ArtisansPage() {

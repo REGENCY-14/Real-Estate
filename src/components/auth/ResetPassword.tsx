@@ -194,16 +194,14 @@ export default function ResetPassword() {
       >
         <div className="flex flex-col items-center gap-[10px]">
           <div className="flex items-center gap-2">
-            <div className="relative h-[clamp(2.5rem,5.5vh,4.2rem)] w-[clamp(1.94rem,4.3vh,3.25rem)] shrink-0">
-              <Image
-                src="/auth-logo-mark.png"
-                alt=""
-                fill
-                className="object-contain object-bottom [filter:brightness(0)]"
-              />
+            <div
+              className="relative flex h-[clamp(2.5rem,5.5vh,4.2rem)] w-[clamp(1.94rem,4.3vh,3.25rem)] shrink-0 items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-lg"
+              aria-label="Logo placeholder"
+            >
+              YC
             </div>
             <p className="text-[clamp(1.25rem,1.6vh+0.4vw,1.5rem)] font-bold leading-tight tracking-[-0.5px] text-black">
-              Festari Estates
+              Your Company
             </p>
           </div>
 

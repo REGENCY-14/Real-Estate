@@ -33,7 +33,7 @@ export default function TrustStatsSection() {
               i < STATS.length - 1 ? "border-b border-[rgba(192,200,195,0.3)] sm:border-b-0 sm:border-r" : ""
             }`}
           >
-            <p className={`${montserrat.className} text-[64px] font-bold leading-[70px] tracking-[-1.28px] text-[#be4d00]`}>
+            <p className={`${montserrat.className} text-[36px] font-bold leading-[1.15] tracking-[-0.8px] text-[#be4d00] sm:text-[48px] md:text-[64px] md:leading-[70px] md:tracking-[-1.28px]`}>
               {stat.value}
               {stat.suffix && <span className="ml-1 text-2xl font-semibold">{stat.suffix}</span>}
             </p>

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ComingSoonPage from "@/components/ComingSoonPage";
 
 export const metadata: Metadata = {
-  title: "Properties | Festari Estate",
-  description: "Browse the Festari Estates property portfolio.",
+  title: "Properties | Your Company",
+  description: "Browse the Your Company property portfolio.",
 };
 
 export default function PropertiesPage() {

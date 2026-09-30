@@ -26,7 +26,7 @@ export const REVIEWS = [
     name: "Elena Van Der Bilt",
     date: "March 2024",
     quote:
-      "The attention to detail in this property is unmatched. FEO Estates provided a seamless viewing experience that truly showcased the architectural nuances of the home.",
+      "The attention to detail in this property is unmatched. Your Company provided a seamless viewing experience that truly showcased the architectural nuances of the home.",
   },
   {
     name: "Julian St. Claire",
@@ -38,7 +38,7 @@ export const REVIEWS = [
 
 export const HOST = {
   name: "Marcus Vane",
-  role: "Verified FEO Expert",
+  role: "Verified Expert",
 };
 
 export const PROPERTIES: Property[] = [
@@ -110,7 +110,7 @@ export const PROPERTIES: Property[] = [
     sqft: 12_400,
     parking: 6,
     description: [
-      "A masterfully carved sanctuary where ancient geological beauty meets 21st-century architectural precision. The Sandstone Valleys is FEO's flagship listing on the Costa Blanca.",
+      "A masterfully carved sanctuary where ancient geological beauty meets 21st-century architectural precision. The Sandstone Valleys is Your Company's flagship listing on the Costa Blanca.",
       "Eight suites, a resident spa wing, and a motor court built for a serious collection make this the rare estate that scales from intimate family living to full-scale entertaining without compromise.",
     ],
   },

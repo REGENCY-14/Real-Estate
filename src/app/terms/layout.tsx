@@ -1,16 +1,14 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Your Company",
+  description: "Read Your Company's terms and conditions.",
+};
 
 export default function TermsLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-	return (
-		<div className="flex items-center justify-center p-8">
-			<div className="w-full h-full bg-linear-to-br from-[#BE4D00] to-[#1E3240] shadow-sm rounded-lg">
-				<div className="p-8 px-32">{children}</div>
-			</div>
-		</div>
-	);
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return children;
 }
-

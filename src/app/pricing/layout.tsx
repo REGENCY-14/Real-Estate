@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Festari Estate",
-  description: "Explore Festari Estates' membership tiers for exclusive access to properties, hotels, and artisans.",
+  title: "Pricing | Your Company",
+  description: "Explore Your Company's membership tiers for exclusive access to properties, hotels, and artisans.",
 };
 
 export default function PricingLayout({

@@ -30,10 +30,10 @@ export default function NewsletterSection() {
     <section className="relative w-full overflow-hidden bg-[#fcf9f8]">
       <OrbitVectorBackground />
       <div className="relative mx-auto flex max-w-[672px] flex-col items-center gap-6 px-8 py-16 text-center md:py-24">
-        <h2 className={`${montserrat.className} text-[32px] font-semibold text-[#00261b] md:text-[40px]`}>
+        <h2 className={`${montserrat.className} text-[24px] font-semibold text-[#00261b] sm:text-[32px] md:text-[40px]`}>
           Stay Informed on Rare Opportunities
         </h2>
-        <p className="text-lg text-[#414944]">
+        <p className="text-base text-[#414944] sm:text-lg">
           Subscribe to our weekly curated insights and receive early access to unlisted legacy estates.
         </p>
 
@@ -50,7 +50,7 @@ export default function NewsletterSection() {
           <button
             type="submit"
             disabled={loading}
-            className="whitespace-nowrap rounded-xl bg-[#be4d00] px-4 py-3.5 text-lg text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+            className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-3.5 text-lg text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
           >
             {loading ? "Joining…" : "Join the Exclusive list"}
           </button>

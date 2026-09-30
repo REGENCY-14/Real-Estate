@@ -78,13 +78,13 @@ export default function ContactFormSection() {
           </p>
 
           <a
-            href="mailto:team@festariestate.com"
+            href="mailto:team@yourcompany.com"
             className="flex items-center gap-4 pt-2 transition-opacity hover:opacity-80"
           >
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
               <MailBadgeIcon />
             </span>
-            <span className="text-base font-medium text-[#0f1621]">team@festariestate.com</span>
+            <span className="text-base font-medium text-[#0f1621]">team@yourcompany.com</span>
           </a>
 
           <div className="flex items-center gap-3 pt-1">
@@ -129,7 +129,7 @@ export default function ContactFormSection() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Alexander Festari"
+                    placeholder="Alexander Doe"
                     disabled={loading}
                     className="rounded-xl border border-[#c0c8c3]/50 bg-white/50 px-4 py-3.5 text-base text-[#0f1621] placeholder:text-[#6b7280] focus:outline-none focus:ring-1 focus:ring-[#be4d00] disabled:opacity-70"
                   />

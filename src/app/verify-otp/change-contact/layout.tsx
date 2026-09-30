@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Change Contact Method | Festari Estate",
+  title: "Change Contact Method | Your Company",
   description: "Choose which verified contact method to update.",
 };
 

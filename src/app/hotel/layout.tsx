@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hotels | Festari Estate",
-  description: "Explore available hotels on Festari Estate.",
+  title: "Hotels | Your Company",
+  description: "Explore available hotels on Your Company.",
 };
 
 export default function HotelLayout({

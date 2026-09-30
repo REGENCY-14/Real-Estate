@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Festari Estate",
+  title: "Home | Your Company",
   description:
     "Buy or sell properties with confidence. Browse verified listings and connect directly with trusted property owners.",
 };

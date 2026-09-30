@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login | Festari Estate",
-  description: "Login to your Festari Estate account.",
+  title: "Login | Your Company",
+  description: "Login to your account.",
 };
 
 export default function LoginLayout({

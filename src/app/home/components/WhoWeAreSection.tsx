@@ -12,14 +12,14 @@ export default function WhoWeAreSection() {
       <div className="mx-auto max-w-[1280px] px-8 py-16 md:py-24">
         <div className="mb-12 flex flex-col gap-3">
           <p className="text-sm font-semibold uppercase tracking-[1.4px] text-[#be4d00]">About Us</p>
-          <h2 className={`${montserrat.className} text-[32px] font-semibold text-[#00261b] md:text-[40px]`}>
+          <h2 className={`${montserrat.className} text-[24px] font-semibold text-[#00261b] sm:text-[32px] md:text-[40px]`}>
             Who we are
           </h2>
         </div>
 
         <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-between gap-10">
-            <p className="text-2xl font-medium leading-relaxed text-[#414944] md:text-[28px]">
+            <p className="text-lg font-medium leading-relaxed text-[#414944] sm:text-2xl md:text-[28px]">
               We develop{" "}
               <span className="font-semibold text-[#00261b]">contemporary residences</span> where{" "}
               <span className="font-semibold text-[#00261b]">architecture, light and landscape</span> exist in{" "}

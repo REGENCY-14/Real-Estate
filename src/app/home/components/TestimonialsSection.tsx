@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
         <div className="mb-12 flex items-end justify-between gap-6">
           <div className="flex flex-col gap-3">
             <p className="text-sm font-semibold uppercase tracking-[1.4px] text-[#be4d00]">Our Reviews</p>
-            <h2 className={`${montserrat.className} text-[32px] font-semibold text-[#00261b] md:text-[40px]`}>
+            <h2 className={`${montserrat.className} text-[24px] font-semibold text-[#00261b] sm:text-[32px] md:text-[40px]`}>
               What Our Clients Say
             </h2>
           </div>

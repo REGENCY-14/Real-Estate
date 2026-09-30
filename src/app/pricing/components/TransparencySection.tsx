@@ -20,7 +20,7 @@ export default function TransparencySection() {
             Just pure portfolio focus.
           </h2>
           <p className="text-lg text-[#414944]">
-            At Festari Estates, we believe transparency is the bedrock of luxury service. Our fee structure is as
+            At Your Company, we believe transparency is the bedrock of luxury service. Our fee structure is as
             solid as the foundations of our listings. We do not charge hidden maintenance fees, transaction
             surcharges, or opaque listing renewals.
           </p>

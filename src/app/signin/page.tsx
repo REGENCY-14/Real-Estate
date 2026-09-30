@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ComingSoonPage from "@/components/ComingSoonPage";
 
 export const metadata: Metadata = {
-  title: "Seller Sign In | Festari Estate",
-  description: "Sign in to your Festari Estates seller dashboard.",
+  title: "Seller Sign In | Your Company",
+  description: "Sign in to your seller dashboard.",
 };
 
 export default function SignInPage() {

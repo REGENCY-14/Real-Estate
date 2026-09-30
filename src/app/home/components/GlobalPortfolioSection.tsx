@@ -40,7 +40,7 @@ export default function GlobalPortfolioSection() {
       <div className="mx-auto max-w-[1280px] px-8 py-16 md:py-24">
         <div className="flex flex-col overflow-hidden rounded-[40px] bg-[#00261b] shadow-2xl lg:flex-row">
           <div className="flex flex-col gap-6 p-10 lg:w-[384px] lg:shrink-0">
-            <h2 className={`${montserrat.className} text-[32px] font-semibold leading-tight text-white md:text-[40px]`}>
+            <h2 className={`${montserrat.className} text-[24px] font-semibold leading-tight text-white sm:text-[32px] md:text-[40px]`}>
               Explore the Global Portfolio
             </h2>
             <p className="text-lg text-white/70">

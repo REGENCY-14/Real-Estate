@@ -69,7 +69,7 @@ export default function ArtisanHero() {
 
         <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-lg text-white/70">
           Curating the world&apos;s most distinguished makers to furnish, finish, and breathe life into every
-          Festari estate.
+          Your Company.
         </motion.p>
       </div>
 

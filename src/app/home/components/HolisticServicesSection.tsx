@@ -43,7 +43,7 @@ const SERVICES = [
   {
     icon: <BookingIcon />,
     title: "Seamless Booking",
-    description: "Exclusive access to global venues and five-star hotel partnerships for FEO members.",
+    description: "Exclusive access to global venues and five-star hotel partnerships for our members.",
   },
   {
     icon: <VenueIcon />,
@@ -64,10 +64,10 @@ export default function HolisticServicesSection() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <p className="text-sm font-semibold uppercase tracking-[1.4px] text-[#be4d00]">Services</p>
-            <h2 className={`${montserrat.className} text-[32px] font-semibold leading-tight text-[#00261b] md:text-[40px]`}>
+            <h2 className={`${montserrat.className} text-[24px] font-semibold leading-tight text-[#00261b] sm:text-[32px] md:text-[40px]`}>
               Beyond Real Estate: A Holistic Sanctuary
             </h2>
-            <p className="text-lg text-[#414944]">
+            <p className="text-base text-[#414944] sm:text-lg">
               Connecting properties, hospitality, venues, and trusted services in one seamless platform.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function HolisticServicesSection() {
                   {service.icon}
                 </span>
                 <div className="flex flex-col gap-1">
-                  <h3 className={`${montserrat.className} text-2xl font-semibold text-[#00261b]`}>{service.title}</h3>
+                  <h3 className={`${montserrat.className} text-xl font-semibold text-[#00261b] sm:text-2xl`}>{service.title}</h3>
                   <p className="text-base text-[#414944]">{service.description}</p>
                 </div>
               </div>
@@ -92,13 +92,12 @@ export default function HolisticServicesSection() {
             <Image src="/landing/services-interior.jpg" alt="Holistic estate services" fill className="object-cover" />
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src="/auth-logo-mark.png"
-                alt=""
-                width={140}
-                height={186}
-                className="h-[38%] w-auto opacity-90 [filter:brightness(0)_invert(1)] drop-shadow-[0_0_48px_rgba(0,0,0,0.55)]"
-              />
+              <div
+                className="flex h-[38%] w-[140px] items-center justify-center rounded-full bg-[#BE4D00] text-white font-semibold text-4xl opacity-90 drop-shadow-[0_0_48px_rgba(0,0,0,0.55)]"
+                aria-label="Logo placeholder"
+              >
+                YC
+              </div>
             </div>
           </div>
           <div className="relative -mt-16 ml-4 max-w-[320px] rounded-2xl border border-white/20 bg-[rgba(252,249,248,0.85)] p-8 shadow-xl backdrop-blur-md md:absolute md:bottom-[-40px] md:left-[-40px] md:mt-0">

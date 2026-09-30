@@ -21,7 +21,7 @@ export default function ContactHero() {
   return (
     <section className="relative flex min-h-[560px] w-full flex-col">
       <div className="absolute inset-0 overflow-hidden">
-        <Image src="/contact/hero.jpg" alt="Festari Estates concierge lobby" fill priority className="object-cover" />
+        <Image src="/contact/hero.jpg" alt="Your Company concierge lobby" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70" />
       </div>

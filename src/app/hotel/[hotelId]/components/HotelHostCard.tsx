@@ -74,7 +74,7 @@ export default function HotelHostCard({ hotel }: { hotel: Hotel }) {
           <div className="flex flex-1 flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xl font-bold text-[#00261b]">{HOTEL_HOST.name}</p>
-              <p className="text-sm text-[#717974]">Hosting on Festari Estates</p>
+              <p className="text-sm text-[#717974]">Hosting on Your Company</p>
             </div>
             <button
               type="button"

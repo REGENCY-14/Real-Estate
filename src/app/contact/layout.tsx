@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Festari Estate",
-  description: "Get in touch with Festari Estates' concierge team for real estate, hotel, and artisan inquiries.",
+  title: "Contact Us | Your Company",
+  description: "Get in touch with Your Company's concierge team for real estate, hotel, and artisan inquiries.",
 };
 
 export default function ContactLayout({

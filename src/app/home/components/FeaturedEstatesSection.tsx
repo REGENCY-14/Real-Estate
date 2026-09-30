@@ -44,7 +44,7 @@ export default function FeaturedEstatesSection() {
         <div className="mb-12 flex items-end justify-between gap-6">
           <div className="flex flex-col gap-3">
             <p className="text-sm font-semibold uppercase tracking-[1.4px] text-[#be4d00]">Curated Selection</p>
-            <h2 className={`${montserrat.className} text-[32px] font-semibold text-[#00261b] md:text-[40px]`}>
+            <h2 className={`${montserrat.className} text-[24px] font-semibold text-[#00261b] sm:text-[32px] md:text-[40px]`}>
               Featured Legacy Estates
             </h2>
           </div>
@@ -65,7 +65,7 @@ export default function FeaturedEstatesSection() {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <Link
             href="/property"
-            className="group relative col-span-1 h-[420px] overflow-hidden rounded-xl shadow-[0px_20px_40px_0px_rgba(26,26,26,0.08)] lg:col-span-8 lg:h-[600px]"
+            className="group relative col-span-1 h-[420px] overflow-hidden rounded-2xl shadow-[0px_20px_40px_0px_rgba(26,26,26,0.08)] lg:col-span-8 lg:h-[600px]"
           >
             <Image
               src="/landing/sandstone-valleys.jpg"
@@ -108,7 +108,7 @@ export default function FeaturedEstatesSection() {
               <Link
                 href="/property"
                 key={estate.title}
-                className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-[0px_20px_40px_0px_rgba(26,26,26,0.08)]"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-[0px_20px_40px_0px_rgba(26,26,26,0.08)]"
               >
                 <div className="relative h-[200px] shrink-0 overflow-hidden lg:h-[256px]">
                   <Image
@@ -117,7 +117,7 @@ export default function FeaturedEstatesSection() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute right-4 top-4 rounded-lg bg-white/90 px-3 py-1 text-base font-bold text-[#00261b] backdrop-blur">
+                  <span className="absolute right-4 top-4 rounded-xl bg-white/90 px-3 py-1 text-base font-bold text-[#00261b] backdrop-blur">
                     {estate.price}
                   </span>
                 </div>
