@@ -88,7 +88,7 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
           <div className="hidden items-center gap-6 lg:flex">
             <Link
               href="/signup"
-              className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-3.5 text-[18px] font-normal text-white transition-colors hover:bg-[#a54300]"
+              className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-2.5 text-sm font-normal text-white transition-colors hover:bg-[#a54300]"
             >
               Sign Up
             </Link>
@@ -175,14 +175,14 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
             <div className="flex items-center gap-3 border-t border-white/10 p-1">
               <Link
                 href="/login"
-                className="flex flex-1 items-center justify-center rounded-2xl border border-white/20 py-3 text-[15px] font-medium text-white transition-colors hover:bg-white/10"
+                className="flex flex-1 items-center justify-center rounded-2xl border border-white/20 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Log in
               </Link>
               <Link
                 href="/signup"
-                className="flex flex-1 items-center justify-center rounded-2xl bg-[#be4d00] py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#a54300]"
+                className="flex flex-1 items-center justify-center rounded-2xl bg-[#be4d00] py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#a54300]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign Up

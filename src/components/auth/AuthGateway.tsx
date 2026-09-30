@@ -36,9 +36,9 @@ const FLUID = {
   subtitle: "text-[clamp(0.8125rem,0.9vh,1rem)]",
   label: "text-[clamp(0.8125rem,0.9vh,0.875rem)]",
   input: "px-[clamp(0.875rem,1.2vw,1.0625rem)] py-[clamp(0.65rem,1.6vh,1rem)] text-[clamp(0.8125rem,0.9vh,0.875rem)]",
-  buttonText: "text-[clamp(0.9375rem,1vh+0.4vw,1.125rem)]",
-  buttonPad: "px-4 py-[clamp(0.75rem,2vh,1rem)]",
-  socialButton: "h-[clamp(2.5rem,5.5vh,2.875rem)] text-[clamp(0.8125rem,0.9vh,0.875rem)]",
+  buttonText: "text-[clamp(0.8125rem,0.8vh+0.3vw,1rem)]",
+  buttonPad: "px-4 py-[clamp(0.625rem,1.6vh,0.875rem)]",
+  socialButton: "h-[clamp(2.25rem,5vh,2.625rem)] text-[clamp(0.75rem,0.85vh,0.8125rem)]",
 };
 
 const HERO_CONTENT = {
@@ -555,7 +555,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
             whileHover={shouldReduceMotion ? undefined : { y: -1 }}
             whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
             type="button"
-            className={`flex flex-1 items-center justify-center gap-2.5 rounded-xl border border-[#c0c8c3] bg-white text-black/80 ${FLUID.socialButton}`}
+            className={`flex flex-1 items-center justify-center gap-2.5 rounded-2xl border border-[#c0c8c3] bg-white text-black/80 ${FLUID.socialButton}`}
           >
             <GoogleIcon />
             Login with Google
@@ -564,7 +564,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
             whileHover={shouldReduceMotion ? undefined : { y: -1 }}
             whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
             type="button"
-            className={`flex flex-1 items-center justify-center gap-2.5 rounded-xl border border-[#c0c8c3] bg-white text-black/80 ${FLUID.socialButton}`}
+            className={`flex flex-1 items-center justify-center gap-2.5 rounded-2xl border border-[#c0c8c3] bg-white text-black/80 ${FLUID.socialButton}`}
           >
             <LinkedInIcon />
             Login with LinkedIn
@@ -652,7 +652,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                 whileTap={shouldReduceMotion || loading ? undefined : { scale: 0.98 }}
                 type="submit"
                 disabled={loading}
-                className={`flex w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                className={`flex w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
               >
                 {loading ? (
                   <>
@@ -706,7 +706,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                     whileHover={shouldReduceMotion ? undefined : { y: -1 }}
                     whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
                     type="submit"
-                    className={`flex w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                    className={`flex w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] ${FLUID.buttonPad} ${FLUID.buttonText}`}
                   >
                     Next
                   </motion.button>
@@ -756,7 +756,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                       whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
                       type="button"
                       onClick={handleBack}
-                      className={`flex w-full items-center justify-center gap-2 rounded-xl border border-[#c0c8c3] text-[#414944] transition-colors hover:bg-[#f3f0ee] ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                      className={`flex w-full items-center justify-center gap-2 rounded-2xl border border-[#c0c8c3] text-[#414944] transition-colors hover:bg-[#f3f0ee] ${FLUID.buttonPad} ${FLUID.buttonText}`}
                     >
                       Back
                     </motion.button>
@@ -764,7 +764,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                       whileHover={shouldReduceMotion ? undefined : { y: -1 }}
                       whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
                       type="submit"
-                      className={`flex w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                      className={`flex w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] ${FLUID.buttonPad} ${FLUID.buttonText}`}
                     >
                       Next
                     </motion.button>
@@ -840,7 +840,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                       type="button"
                       onClick={handleBack}
                       disabled={loading}
-                      className={`flex w-full items-center justify-center gap-2 rounded-xl border border-[#c0c8c3] text-[#414944] transition-colors hover:bg-[#f3f0ee] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                      className={`flex w-full items-center justify-center gap-2 rounded-2xl border border-[#c0c8c3] text-[#414944] transition-colors hover:bg-[#f3f0ee] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
                     >
                       Back
                     </motion.button>
@@ -849,7 +849,7 @@ export default function AuthGateway({ initialMode }: AuthGatewayProps) {
                       whileTap={shouldReduceMotion || loading ? undefined : { scale: 0.98 }}
                       type="submit"
                       disabled={loading}
-                      className={`flex w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
+                      className={`flex w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-white transition-colors hover:bg-[#a54300] disabled:opacity-70 ${FLUID.buttonPad} ${FLUID.buttonText}`}
                     >
                       {loading ? (
                         <>

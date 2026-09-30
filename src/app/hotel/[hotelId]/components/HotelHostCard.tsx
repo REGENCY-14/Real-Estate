@@ -79,7 +79,7 @@ export default function HotelHostCard({ hotel }: { hotel: Hotel }) {
             <button
               type="button"
               onClick={() => toast.success(`Your message request has been sent to ${HOTEL_HOST.name}.`)}
-              className="mt-4 self-center rounded-xl bg-[#be4d00] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a54300] sm:mt-0 sm:self-auto"
+              className="mt-4 self-center rounded-2xl bg-[#be4d00] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a54300] sm:mt-0 sm:self-auto"
             >
               Message Host
             </button>

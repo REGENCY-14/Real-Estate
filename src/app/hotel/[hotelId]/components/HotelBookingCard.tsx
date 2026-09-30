@@ -53,7 +53,7 @@ export default function HotelBookingCard({ hotel }: { hotel: Hotel }) {
 
       <Link
         href={`/hotel/${hotel.id}/reserve`}
-        className="flex items-center justify-center rounded-xl bg-[#be4d00] px-6 py-4 text-base font-semibold text-white transition-colors hover:bg-[#a54300]"
+        className="flex items-center justify-center rounded-2xl bg-[#be4d00] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a54300]"
       >
         Check availability
       </Link>

@@ -81,7 +81,7 @@ export default function ComingSoonPage({
             <button
               type="submit"
               disabled={loading}
-              className="whitespace-nowrap rounded-xl bg-[#be4d00] px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+              className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
             >
               {loading ? "Joining…" : "Notify me"}
             </button>

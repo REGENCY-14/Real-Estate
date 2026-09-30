@@ -173,7 +173,7 @@ export default function ContactFormSection() {
               <button
                 type="submit"
                 disabled={loading}
-                className="flex items-center justify-center gap-2 rounded-xl bg-[#be4d00] py-4 text-sm font-semibold tracking-[0.7px] text-white shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors hover:bg-[#a54300] disabled:opacity-70"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-[#be4d00] py-3 text-sm font-semibold tracking-[0.7px] text-white shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors hover:bg-[#a54300] disabled:opacity-70"
               >
                 {loading ? "Sending…" : "Send Message"}
                 {!loading && <SendIcon />}

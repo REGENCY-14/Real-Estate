@@ -262,7 +262,7 @@ export default function ResetPassword() {
                 whileTap={shouldReduceMotion || sendLoading ? undefined : { scale: 0.98 }}
                 type="submit"
                 disabled={sendLoading}
-                className="flex h-[60px] w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-lg text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+                className="flex h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-base text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
               >
                 {sendLoading ? (
                   <>
@@ -406,7 +406,7 @@ export default function ResetPassword() {
                 whileTap={shouldReduceMotion || updateLoading ? undefined : { scale: 0.98 }}
                 type="submit"
                 disabled={updateLoading}
-                className="flex h-[60px] w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-lg text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+                className="flex h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-base text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
               >
                 {updateLoading ? (
                   <>

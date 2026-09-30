@@ -73,7 +73,7 @@ export default function PropertyHero() {
       </div>
 
       <motion.div {...fadeUp(0.3)} className="relative z-10 mx-5 md:mx-16">
-        <div className="rounded-[32px] border border-white/20 bg-[rgba(50,50,50,0.7)] p-2.5">
+        <div className="rounded-[32px] border border-white/20 bg-[rgba(50,50,50,0.7)] p-1">
           <p className="px-6 py-3 text-2xl font-medium text-white">Find your perfect home</p>
 
           <div className="flex flex-col items-stretch gap-4 p-4 md:flex-row md:items-center">
@@ -107,7 +107,7 @@ export default function PropertyHero() {
               onClick={handleSearch}
               whileHover={shouldReduceMotion ? undefined : { y: -1 }}
               whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
-              className="flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3.5 text-lg text-[#06090e] transition-colors hover:bg-white"
+              className="flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-2.5 text-sm text-[#06090e] transition-colors hover:bg-white"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path

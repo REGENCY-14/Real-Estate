@@ -215,7 +215,7 @@ export default function ChangeContactMethod() {
                 type="button"
                 onClick={handleApply}
                 disabled={loading}
-                className="flex h-[60px] w-full items-center justify-center gap-2 rounded-xl bg-[#be4d00] text-[18px] text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+                className="flex h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-[#be4d00] text-base text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
               >
                 {loading ? (
                   <>

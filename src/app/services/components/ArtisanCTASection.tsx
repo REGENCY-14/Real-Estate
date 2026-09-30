@@ -26,7 +26,7 @@ export default function ArtisanCTASection() {
           <button
             type="button"
             onClick={() => toast.success("Thanks for your interest. Our guild team will reach out shortly.")}
-            className="whitespace-nowrap rounded-xl bg-[#be4d00] px-4 py-3.5 text-lg text-white transition-colors hover:bg-[#a54300]"
+            className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#a54300]"
           >
             Become artisan
           </button>

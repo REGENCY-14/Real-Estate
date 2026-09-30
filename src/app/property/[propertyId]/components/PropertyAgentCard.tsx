@@ -126,7 +126,7 @@ export default function PropertyAgentCard() {
         <button
           type="submit"
           disabled={loading}
-          className="flex items-center justify-center gap-2 rounded-xl bg-[#be4d00] px-6 py-4 text-base font-semibold text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
+          className="flex items-center justify-center gap-2 rounded-2xl bg-[#be4d00] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a54300] disabled:opacity-70"
         >
           {loading ? "Sending…" : "Send Inquiry"}
           {!loading && <SendIcon />}

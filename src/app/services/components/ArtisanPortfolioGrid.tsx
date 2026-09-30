@@ -48,7 +48,7 @@ function ArtisanCard({ artisan }: { artisan: ArtisanProfile }) {
 
           <Link
             href={`/services/${artisan.id}`}
-            className="flex items-center justify-center gap-2 rounded-xl border border-white/20 py-3.5 text-sm font-semibold tracking-[0.7px] text-white transition-colors hover:bg-white/10"
+            className="flex items-center justify-center gap-2 rounded-2xl border border-white/20 py-2.5 text-sm font-semibold tracking-[0.7px] text-white transition-colors hover:bg-white/10"
           >
             View Portfolio
             <ArrowIcon />

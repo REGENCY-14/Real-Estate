@@ -91,7 +91,7 @@ export default function ArtisanHostCard({ artisan }: { artisan: ArtisanProfile }
             <button
               type="button"
               onClick={() => toast.success(`Your message request has been sent to ${artisan.name}.`)}
-              className="w-full max-w-[240px] rounded-xl bg-[#be4d00] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#a54300]"
+              className="w-full max-w-[240px] rounded-2xl bg-[#be4d00] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a54300]"
             >
               Message Artisan
             </button>

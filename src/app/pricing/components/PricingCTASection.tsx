@@ -22,7 +22,7 @@ export default function PricingCTASection() {
         <button
           type="button"
           onClick={() => toast.success("Your 14-day trial has started. Welcome to Your Company.")}
-          className="whitespace-nowrap rounded-xl bg-[#be4d00] px-4 py-3.5 text-lg text-white transition-colors hover:bg-[#a54300]"
+          className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#a54300]"
         >
           Start a trial
         </button>

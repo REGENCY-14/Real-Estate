@@ -82,7 +82,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
             onClick={() => toast.success(`Welcome to the ${plan.name} tier. Our team will follow up shortly.`)}
             whileHover={shouldReduceMotion ? undefined : { y: -1 }}
             whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
-            className="rounded-xl bg-[#be4d00] px-4 py-3.5 text-lg text-white transition-colors hover:bg-[#a54300]"
+            className="rounded-2xl bg-[#be4d00] px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#a54300]"
           >
             {plan.cta}
           </motion.button>
