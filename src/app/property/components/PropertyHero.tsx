@@ -43,7 +43,7 @@ export default function PropertyHero() {
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 py-16 md:px-16">
+      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 pb-12 pt-28 sm:pt-24 md:px-16 md:pt-16">
         <motion.div {...fadeUp(0)} className="flex gap-2">
           {CATEGORIES.map((category) => (
             <button

@@ -55,7 +55,7 @@ export default function ArtisanHero() {
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 py-16 md:px-16">
+      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 pb-12 pt-28 sm:pt-24 md:px-16 md:pt-16">
         <motion.p {...fadeUp(0)} className="text-sm font-semibold uppercase tracking-[1.4px] text-white">
           The Artisan Guild
         </motion.p>

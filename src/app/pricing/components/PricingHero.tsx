@@ -41,7 +41,7 @@ export default function PricingHero() {
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 py-20 md:px-16">
+      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 pb-16 pt-32 sm:pt-28 md:px-16 md:pt-20">
         <motion.span
           {...fadeUp(0)}
           className="w-fit rounded-full bg-white px-4 py-1.5 text-xs font-medium uppercase tracking-[1.2px] text-[#0f1621]"

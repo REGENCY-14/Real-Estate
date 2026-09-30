@@ -64,7 +64,7 @@ export default function ArtisanDetailHero({ artisan }: { artisan: ArtisanProfile
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 py-20 md:px-16">
+      <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 px-5 pb-12 pt-32 sm:pt-28 md:px-16 md:pt-20">
         <motion.p {...fadeUp(0)} className="text-sm font-semibold uppercase tracking-[1.4px] text-white">
           {artisan.craft}
         </motion.p>

@@ -40,13 +40,18 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
       <motion.nav
         initial={false}
         animate={{
-          borderRadius: scrolled ? 20 : 64,
+          borderTopLeftRadius: scrolled ? 20 : 64,
+          borderTopRightRadius: scrolled ? 20 : 64,
+          borderBottomLeftRadius: isMenuOpen ? 0 : scrolled ? 20 : 64,
+          borderBottomRightRadius: isMenuOpen ? 0 : scrolled ? 20 : 64,
           paddingTop: scrolled ? 12 : 16,
           paddingBottom: scrolled ? 12 : 16,
-          backgroundColor: scrolled ? "rgba(0,38,27,0.92)" : "rgba(0,0,0,0.15)",
+          backgroundColor: scrolled ? "rgba(0,38,27,0.55)" : "rgba(0,0,0,0.15)",
         }}
         transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className="flex w-full max-w-[1152px] items-center justify-center border border-white/20 px-8 backdrop-blur-md"
+        className={`relative z-10 flex w-full max-w-[1152px] items-center justify-center border border-white/20 px-8 backdrop-blur-md ${
+          isMenuOpen ? "border-b-transparent" : ""
+        }`}
       >
         <div className="flex w-full items-center justify-between gap-8">
           <div className="flex items-center gap-12">
@@ -132,43 +137,57 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
           <motion.div
             id="landing-navbar-menu"
             role="menu"
-            initial={{ opacity: 0, y: -8, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            initial={{ opacity: 0, y: -6 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              backgroundColor: scrolled ? "rgba(0,38,27,0.55)" : "rgba(0,0,0,0.15)",
+              borderBottomLeftRadius: scrolled ? 20 : 32,
+              borderBottomRightRadius: scrolled ? 20 : 32,
+            }}
+            exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-x-5 top-[calc(100%-8px)] z-40 origin-top overflow-hidden rounded-2xl border border-white/20 bg-[#00261b] shadow-xl lg:hidden"
+            className="absolute inset-x-5 top-full z-0 origin-top overflow-hidden border border-t-0 border-white/20 backdrop-blur-md lg:hidden"
           >
-            <ul className="divide-y divide-white/10">
-              {NAV_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="block px-5 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 hover:text-[#fb7933]"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/login"
-                  className="block px-5 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 hover:text-[#fb7933]"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Log in
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/signup"
-                  className="block bg-[#be4d00] px-5 py-3 text-base font-medium text-white transition-colors hover:bg-[#a54300]"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Sign Up
-                </Link>
-              </li>
+            <ul className="flex flex-col gap-1 p-3">
+              {NAV_LINKS.map((link) => {
+                const isActive =
+                  !link.href.includes("#") &&
+                  (pathname === link.href || pathname.startsWith(`${link.href}/`));
+                return (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className={`flex items-center rounded-xl px-4 py-3 text-[15px] font-medium tracking-[0.3px] transition-colors ${
+                        isActive
+                          ? "bg-[#be4d00]/15 text-[#fb7933]"
+                          : "text-white/85 hover:bg-white/10 hover:text-white"
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
+
+            <div className="flex items-center gap-3 border-t border-white/10 p-3">
+              <Link
+                href="/login"
+                className="flex flex-1 items-center justify-center rounded-xl border border-white/20 py-3 text-[15px] font-medium text-white transition-colors hover:bg-white/10"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Log in
+              </Link>
+              <Link
+                href="/signup"
+                className="flex flex-1 items-center justify-center rounded-xl bg-[#be4d00] py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#a54300]"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sign Up
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

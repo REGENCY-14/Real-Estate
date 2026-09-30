@@ -28,7 +28,7 @@ export default function ContactHero() {
 
       <LandingNavbar overlay />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center gap-5 px-5 py-20 md:px-16">
+      <div className="relative z-10 flex flex-1 flex-col justify-center gap-5 px-5 pb-16 pt-32 sm:pt-28 md:px-16 md:pt-20">
         <motion.div {...fadeUp(0)} className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[1.4px]">
           <Link href="/home" className="text-[#bcedd7] transition-colors hover:text-white">
             Home

@@ -57,7 +57,7 @@ export default function ComingSoonPage({
 
         <LandingNavbar overlay />
 
-        <Reveal className="relative z-10 flex max-w-[560px] flex-col items-center gap-6 py-24 text-center">
+        <Reveal className="relative z-10 flex max-w-[560px] flex-col items-center gap-6 pb-16 pt-32 text-center sm:pt-24 sm:pb-24 md:pt-16">
           <span className="w-fit rounded-full bg-[#be4d00]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[1.4px] text-[#fb7933]">
             Coming Soon
           </span>
