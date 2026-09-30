@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const NAV_LINKS = [
   { label: "Features", href: "/home" },
@@ -16,6 +16,7 @@ const NAV_LINKS = [
 
 export default function LandingNavbar({ overlay = false }: { overlay?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const pathname = usePathname();
 
@@ -25,6 +26,10 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <div
@@ -75,7 +80,7 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
             </div>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="hidden items-center gap-6 lg:flex">
             <Link
               href="/signup"
               className="whitespace-nowrap rounded-2xl bg-[#be4d00] px-4 py-3.5 text-[18px] font-normal text-white transition-colors hover:bg-[#a54300]"
@@ -95,8 +100,78 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
               </svg>
             </Link>
           </div>
+
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            className="flex h-9 w-9 items-center justify-center text-white lg:hidden"
+            aria-label="Open menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="landing-navbar-menu"
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <motion.svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              animate={{ rotate: isMenuOpen ? 90 : 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {isMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </motion.svg>
+          </motion.button>
         </div>
       </motion.nav>
+
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            id="landing-navbar-menu"
+            role="menu"
+            initial={{ opacity: 0, y: -8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-x-5 top-[calc(100%-8px)] z-40 origin-top overflow-hidden rounded-2xl border border-white/20 bg-[#00261b] shadow-xl lg:hidden"
+          >
+            <ul className="divide-y divide-white/10">
+              {NAV_LINKS.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="block px-5 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 hover:text-[#fb7933]"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/login"
+                  className="block px-5 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 hover:text-[#fb7933]"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Log in
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/signup"
+                  className="block bg-[#be4d00] px-5 py-3 text-base font-medium text-white transition-colors hover:bg-[#a54300]"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Sign Up
+                </Link>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
