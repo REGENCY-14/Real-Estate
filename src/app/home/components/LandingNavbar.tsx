@@ -40,8 +40,8 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
       <motion.nav
         initial={false}
         animate={{
-          borderTopLeftRadius: scrolled ? 20 : 64,
-          borderTopRightRadius: scrolled ? 20 : 64,
+          borderTopLeftRadius: isMenuOpen ? 20 : scrolled ? 20 : 64,
+          borderTopRightRadius: isMenuOpen ? 20 : scrolled ? 20 : 64,
           borderBottomLeftRadius: isMenuOpen ? 0 : scrolled ? 20 : 64,
           borderBottomRightRadius: isMenuOpen ? 0 : scrolled ? 20 : 64,
           paddingTop: scrolled ? 12 : 16,
@@ -142,14 +142,14 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
               opacity: 1,
               y: 0,
               backgroundColor: scrolled ? "rgba(0,38,27,0.55)" : "rgba(0,0,0,0.15)",
-              borderBottomLeftRadius: scrolled ? 20 : 32,
-              borderBottomRightRadius: scrolled ? 20 : 32,
+              borderBottomLeftRadius: 20,
+              borderBottomRightRadius: 20,
             }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-x-5 top-full z-0 origin-top overflow-hidden border border-t-0 border-white/20 backdrop-blur-md lg:hidden"
           >
-            <ul className="flex flex-col gap-1 p-3">
+            <ul className="flex flex-col gap-1 p-1">
               {NAV_LINKS.map((link) => {
                 const isActive =
                   !link.href.includes("#") &&
@@ -158,7 +158,7 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className={`flex items-center rounded-xl px-4 py-3 text-[15px] font-medium tracking-[0.3px] transition-colors ${
+                      className={`flex items-center rounded-2xl px-4 py-3 text-[15px] font-medium tracking-[0.3px] transition-colors ${
                         isActive
                           ? "bg-[#be4d00]/15 text-[#fb7933]"
                           : "text-white/85 hover:bg-white/10 hover:text-white"
@@ -172,17 +172,17 @@ export default function LandingNavbar({ overlay = false }: { overlay?: boolean }
               })}
             </ul>
 
-            <div className="flex items-center gap-3 border-t border-white/10 p-3">
+            <div className="flex items-center gap-3 border-t border-white/10 p-1">
               <Link
                 href="/login"
-                className="flex flex-1 items-center justify-center rounded-xl border border-white/20 py-3 text-[15px] font-medium text-white transition-colors hover:bg-white/10"
+                className="flex flex-1 items-center justify-center rounded-2xl border border-white/20 py-3 text-[15px] font-medium text-white transition-colors hover:bg-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Log in
               </Link>
               <Link
                 href="/signup"
-                className="flex flex-1 items-center justify-center rounded-xl bg-[#be4d00] py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#a54300]"
+                className="flex flex-1 items-center justify-center rounded-2xl bg-[#be4d00] py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#a54300]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign Up
