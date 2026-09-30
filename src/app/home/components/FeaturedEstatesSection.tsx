@@ -68,35 +68,35 @@ export default function FeaturedEstatesSection() {
             className="group relative col-span-1 h-[420px] overflow-hidden rounded-2xl shadow-[0px_20px_40px_0px_rgba(26,26,26,0.08)] lg:col-span-8 lg:h-[600px]"
           >
             <Image
-              src="/landing/sandstone-valleys.jpg"
+              src="/hotel/hotel-dusk-pool.jpg"
               alt="The Sandstone Valleys"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-6 md:p-10">
-              <div className="flex flex-wrap gap-3">
-                <span className="rounded-full bg-[rgba(254,214,91,0.8)] px-3 py-1.5 text-sm font-semibold tracking-[0.7px] text-[#0f1621]">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col gap-2 p-4 sm:gap-3 sm:p-6 md:p-10">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                <span className="rounded-full bg-[rgba(254,214,91,0.9)] px-3 py-1.5 text-xs font-semibold tracking-[0.7px] text-[#0f1621] sm:text-sm">
                   Featured Exclusive
                 </span>
-                <span className="rounded-full bg-[rgba(229,226,225,0.8)] px-3 py-1.5 text-sm font-semibold tracking-[0.7px] text-[#0f1621]">
+                <span className="rounded-full bg-[rgba(229,226,225,0.9)] px-3 py-1.5 text-xs font-semibold tracking-[0.7px] text-[#0f1621] sm:text-sm">
                   Airport Residential
                 </span>
               </div>
-              <h3 className={`${montserrat.className} pt-1 text-[28px] font-semibold text-white md:text-[40px]`}>
+              <h3 className={`${montserrat.className} pt-1 text-[20px] font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] sm:text-[28px] md:text-[40px]`}>
                 The Sandstone Valleys
               </h3>
-              <p className="max-w-[576px] text-base text-white/90">
+              <p className="hidden max-w-[576px] text-sm text-white/90 sm:block sm:text-base">
                 A masterfully carved sanctuary where ancient geological beauty meets 21st-century architectural
                 precision.
               </p>
-              <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-                <div className="flex flex-wrap gap-6 text-base text-white">
+              <div className="flex flex-col items-start gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <div className="flex flex-wrap gap-4 text-sm text-white sm:gap-6 sm:text-base">
                   <span>8 Beds</span>
                   <span>12 Baths</span>
                   <span>12,400 sqft</span>
                 </div>
-                <span className="rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3.5 text-lg text-[#06090e]">
+                <span className="rounded-2xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-2.5 text-sm text-[#06090e]">
                   View details
                 </span>
               </div>
