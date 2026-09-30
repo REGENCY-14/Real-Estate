@@ -45,7 +45,7 @@ export default function LandingHero() {
         };
 
   return (
-    <section className="relative flex min-h-[700px] w-full flex-col">
+    <section className="relative flex min-h-[520px] w-full flex-col sm:min-h-[600px] md:min-h-[700px]">
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/landing/hero-estate.jpg"
@@ -62,7 +62,7 @@ export default function LandingHero() {
       <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-6 px-5 pb-12 pt-32 text-center sm:gap-8 sm:pb-16 sm:pt-28 md:pt-16">
         <motion.h1
           {...fadeUp(0)}
-          className={`${montserrat.className} max-w-4xl text-[28px] font-bold leading-[1.15] tracking-[-0.6px] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] sm:text-[42px] sm:tracking-[-1.28px] md:text-[56px] lg:text-[64px] lg:leading-[70px]`}
+          className={`${montserrat.className} max-w-4xl text-[36px] font-bold leading-[1.1] tracking-[-1.28px] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] sm:text-[52px] md:text-[64px] md:leading-[70px]`}
         >
           Discover Your Legacy Estate
         </motion.h1>

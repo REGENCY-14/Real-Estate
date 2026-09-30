@@ -56,7 +56,7 @@ export default function PricingHero() {
           Investment in Excellence
         </motion.h1>
 
-        <motion.p {...fadeUp(0.2)} className="max-w-[512px] text-lg text-white">
+        <motion.p {...fadeUp(0.2)} className="max-w-[512px] text-sm text-white sm:text-base md:text-lg">
           Select a membership tier tailored to your portfolio&apos;s growth and management. Our tiers provide bespoke
           access to the world&apos;s most sought-after properties and artisans.
         </motion.p>

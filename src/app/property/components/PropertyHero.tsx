@@ -66,7 +66,7 @@ export default function PropertyHero() {
           Find Your Dream Estate
         </motion.h1>
 
-        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-lg text-white/90">
+        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-sm text-white/90 sm:text-base md:text-lg">
           Explore an exclusive portfolio of premium apartments, historic plots, and commercial spaces tailored to
           your prestigious lifestyle.
         </motion.p>

@@ -67,7 +67,7 @@ export default function ArtisanHero() {
           The Hands Behind the Heritage
         </motion.h1>
 
-        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-lg text-white/70">
+        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-sm text-white/70 sm:text-base md:text-lg">
           Curating the world&apos;s most distinguished makers to furnish, finish, and breathe life into every
           Your Company.
         </motion.p>

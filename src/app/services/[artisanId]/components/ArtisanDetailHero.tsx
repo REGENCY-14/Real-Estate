@@ -76,7 +76,7 @@ export default function ArtisanDetailHero({ artisan }: { artisan: ArtisanProfile
           {artisan.name}
         </motion.h1>
 
-        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-lg text-white/70">
+        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-sm text-white/70 sm:text-base md:text-lg">
           {artisan.bio}
         </motion.p>
 

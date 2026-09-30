@@ -65,7 +65,7 @@ export default function HotelHero() {
           Find Your Perfect Stay
         </motion.h1>
 
-        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-lg text-white/90">
+        <motion.p {...fadeUp(0.2)} className="max-w-[576px] text-sm text-white/90 sm:text-base md:text-lg">
           Discover an exclusive portfolio of luxury hotels and boutique stays, curated for the discerning traveler.
         </motion.p>
       </div>
